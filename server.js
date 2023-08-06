@@ -10,7 +10,6 @@ const hbs = exphbs.create({
     layoutsDir: path.join(__dirname, '/views/layouts') // This points to the directory containing layout templates
 });
 
-
 const session = require('express-session');
 const app = express();
 const PORT = process.env.PORT || 3006;
