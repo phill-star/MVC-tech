@@ -490,63 +490,49 @@ footer {
         flex: 0 0 100%;
     }
 }
-
-/* Define your custom colors and styles */
-:root {
-    --primary: #ccdad1;
-    --secondary: #dce9d5;
-    --tertiary: #788585;
-    --dark: #201110;
-    --border-radius: .3rem;
-}
-
-/* Basic styling for the card */
+/* Style for the card container */
 .card {
-    margin: 20px;
-    border: 1px solid var(--dark);
-    border-radius: var(--border-radius);
-    background-color: var(--primary);
-    box-shadow: 2px 2px var(--dark);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
 }
 
-.card-header {
-    font-size: 1.2rem;
-    color: var(--dark);
-    margin-bottom: 10px;
-}
-
-.card-header h4 {
-    margin: 0;
-}
-
-.card-header p {
-    font-size: 0.8rem;
-    color: var(--tertiary);
-    margin: 0;
-}
-
-.card-body {
+/* Style for the form inputs */
+.card form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 1rem;
-    color: var(--dark);
 }
 
-/* Media query for responsiveness */
-@media screen and (max-width: 768px) {
-    .card {
-        margin: 10px;
-        padding: 15px;
-    }
+/* Style for the form textarea */
+.card form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
 
-    .card-header h4 {
-        font-size: 1rem;
-    }
+/* Style for the submit button */
+.card form button[type="submit"] {
+    background-color: #101b20;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
 
-    .card-header p {
-        font-size: 0.7rem;
-    }
-
-    .card-body {
-        font-size: 0.9rem;
-    }
+/* Style for the submit button on hover */
+.card form button[type="submit"]:hover {
+    background-color: lightblue;
 }
