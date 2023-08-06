@@ -491,7 +491,7 @@ footer {
         flex: 0 0 100%;
     }
 }
-
+/* Style for the card container */
 .card {
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -501,25 +501,48 @@ footer {
     max-width: 500px;
 }
 
+/* Style for the card header */
 .card-header {
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
 
+/* Style for the card header title */
 .card-header h4 {
     margin: 0;
     font-size: 1.25rem;
-    color: white;
+    color: #101b20; /* Change to desired color */
 }
 
+/* Style for the card body */
 .card-body {
     font-size: 1rem;
     color: #131313;
 }
 
-.btn {
-    background-color:#101b20;
+/* Style for the form labels */
+.card-body label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #101b20; /* Change to desired color */
+}
+
+/* Style for the form inputs */
+.card-body input[type="text"],
+.card-body textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Style for the submit button */
+.card-body button[type="submit"] {
+    background-color: #101b20;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -529,6 +552,7 @@ footer {
     transition: background-color 0.2s;
 }
 
-.btn:hover {
+/* Style for the submit button on hover */
+.card-body button[type="submit"]:hover {
     background-color: lightblue;
 }
